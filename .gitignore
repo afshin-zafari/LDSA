@@ -2,3 +2,5 @@
 *.bas
 *.bai
 *.sam
+*.class
+*.jar
