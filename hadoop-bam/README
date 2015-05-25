@@ -11,7 +11,11 @@ compile.sh		A shell script for compiling the java and creating a jar
 			directory in HDFS.
 run_testbam.sh	A shell script for running the jar file on the hadoop and 
                      get back the result.
-TestBAM.jar		The JAR file of the program.
+TestBAM.jar		The JAR file of the program. This file should be used as:
+                     hadoop jar TestBAM.jat <input.bam> <out_dir>
+			where 
+                	<input.bam> is name of a bam file for input and 
+			<out_dir> is a non-existing directory in HDFS.
 *.class		The compiled class files of the java source.
 *.ba?			The BAM and the related (*.bas and *.bai) files.
 
