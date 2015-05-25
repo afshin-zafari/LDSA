@@ -6,12 +6,14 @@
 The files in this directory and their usage are as follow:
 
 TestBAM.java 		The Java source for the HADOOP-BAM mapper-reducer classes.
-compile.sh		A shell script for compiling the java and creating a jar file.
+compile.sh		A shell script for compiling the java and creating a jar 
+                     file. The created JAR file is copied into the '/libjars' 
+			directory in HDFS.
 run_testbam.sh	A shell script for running the jar file on the hadoop and 
                      get back the result.
 TestBAM.jar		The JAR file of the program.
-*.class		The compiled class fiels of the java source.
-*.ba?			The BAM files.
+*.class		The compiled class files of the java source.
+*.ba?			The BAM and the related (*.bas and *.bai) files.
 
 #------------------------------------------------------------------------------
                                    Usage

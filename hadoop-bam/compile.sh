@@ -6,4 +6,6 @@ TESTBAM_DIR=.
 
 javac -cp $ALL_DEPS -Xlint $TESTBAM_DIR/TestBAM.java 
 jar -cvf TestBAM.jar -C $TESTBAM_DIR/ .
+hadoop dfs -rm TestBAM.jar /libjars/TestBAM.jar
+hadoop dfs -put TestBAM.jar /libjars
 
