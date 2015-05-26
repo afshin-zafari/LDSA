@@ -1,0 +1,5 @@
+#!/bin/bash
+ hadoop jar /usr/local/hadoop/contrib/streaming/hadoop-*streaming*.jar \
+-file sam_filter.py    -mapper sam_filter.py \
+-file reducer.py   -reducer reducer.py \
+-input /samfinal -output outputsamfinal2
