@@ -8,11 +8,6 @@ outfile=pysam.AlignmentFile("out_test2.bam","wb",template=samfile)
 iter = samfile.fetch()
 k=0
 for x in iter:
-    #print x
-    #print x.template_length
-    #print "'",samfile.getrname(x.reference_id),"'"
-    #k+=1
-    #if k==2:sys.exit()
     if x.template_length>1000:
         if samfile.getrname(x.reference_id)=='20':
            print samfile.getrname(x.reference_id),x.template_length
