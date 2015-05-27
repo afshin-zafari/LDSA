@@ -2,4 +2,4 @@
 This directory contains the files for using MapReduce Streaming with Python 
 source code that reads from SAM files.
 Since the reducer does nothing in this project, the IdentityReducer java class is used 
-when the streaming scheme of MapReduce is called. 
+when the streaming scheme of MapReduce is called. (See job_submit.sh)
