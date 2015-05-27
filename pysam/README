@@ -1,3 +1,5 @@
 
 This directory contains files for using PySAM module in Python and accessing 
-the BAM files in HDFS.
+the BAM files in local hard-disks and not in HDFS.
+Specific field names should be used in python script to get AlignmentLength (template_length) and 
+Chromosome Number (reference_id).
